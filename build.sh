@@ -14,7 +14,7 @@ for item in * .*; do
   fi
 done
 
-find dist -type f \( -name '*.html' -o -name '*.xml' \) -exec sed -i.bak 's#https://www.moraremipanema.com#https://moraremipanema.com#g' {} \;
+find dist -type f \( -name '*.html' -o -name '*.xml' -o -name '*.txt' \) -exec sed -i.bak 's#https://www.moraremipanema.com#https://moraremipanema.com#g' {} \;
 find dist -type f -name '*.bak' -delete
 
 printf 'Arquivos publicados com domínio canônico normalizado.\n'
