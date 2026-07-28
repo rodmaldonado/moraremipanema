@@ -2,12 +2,6 @@
   command = "sh build.sh"
   publish = "dist"
 
-[[redirects]]
-  from = "https://www.moraremipanema.com/*"
-  to = "https://moraremipanema.com/:splat"
-  status = 301
-  force = true
-
 [[headers]]
   for = "/*.html"
   [headers.values]
