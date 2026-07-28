@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.moraremipanema.com/sitemap.xml
+Sitemap: https://moraremipanema.com/sitemap.xml
