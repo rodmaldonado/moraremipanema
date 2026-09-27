@@ -87,9 +87,12 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
-:root{--paper:#FBFAF7;--ink:#1C1B19;--muted:#9B958A;--line:#E9E4DA;--tan:#C0925A;--dark:#201F1D;--card:#F4F1EA;--nav-h:66px;--hero:url("")}
+:root{--paper:#FBFAF7;--ink:#1C1B19;--muted:#9B958A;--line:#E9E4DA;--tan:#C0925A;--dark:#201F1D;--card:#F4F1EA;--nav-h:66px;--hero:url("fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg")}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:var(--nav-h)}
@@ -227,20 +230,20 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
   <p class="eyebrow">Galeria</p>
   <h2 style="margin-bottom:.4em">Os ambientes</h2>
   <div class="mosaic">
-    <a class="slot g4 tall" href="fotos/sala-estar-ipanema-vista-mar.jpg" target="_blank" rel="noopener"><img src="fotos/sala-estar-ipanema-vista-mar.jpg" alt="Sala de estar integrada com vista para o mar em apartamento de Ipanema"></a>
-    <a class="slot g2 tall" href="fotos/suite-master-ipanema-closet.jpg" target="_blank" rel="noopener"><img src="fotos/suite-master-ipanema-closet.jpg" alt="Suíte master com grande closet planejado em Ipanema" loading="lazy"></a>
-    <a class="slot g3" href="fotos/cozinha-gourmet-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/cozinha-gourmet-ipanema.jpg" alt="Cozinha gourmet com ilha e sala de jantar integrada" loading="lazy"></a>
-    <a class="slot g3" href="fotos/living-integrado-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/living-integrado-ipanema.jpg" alt="Living integrado com poltronas e paisagismo" loading="lazy"></a>
-    <a class="slot g2" href="fotos/cozinha-planejada-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/cozinha-planejada-ipanema.jpg" alt="Cozinha planejada com bancada e marcenaria sob medida" loading="lazy"></a>
-    <a class="slot g2" href="fotos/banheiro-suite-master-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-suite-master-ipanema.jpg" alt="Banheiro da suíte master com duas cubas e mármore" loading="lazy"></a>
-    <a class="slot g2" href="fotos/lavabo-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/lavabo-ipanema.jpg" alt="Lavabo com marcenaria ripada e espelho iluminado" loading="lazy"></a>
-    <a class="slot g3 tall" href="fotos/suite-master-ipanema-quarto.jpg" target="_blank" rel="noopener"><img src="fotos/suite-master-ipanema-quarto.jpg" alt="Quarto da suíte master com painel e acesso ao closet" loading="lazy"></a>
-    <a class="slot g3" href="fotos/escritorio-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/escritorio-ipanema.jpg" alt="Escritório com bancada planejada" loading="lazy"></a>
-    <a class="slot g2" href="fotos/quarto-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/quarto-ipanema.jpg" alt="Quarto com armário planejado" loading="lazy"></a>
-    <a class="slot g2 tall" href="fotos/area-servico-dependencia-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/area-servico-dependencia-ipanema.jpg" alt="Área de serviço ampla com dependência completa" loading="lazy"></a>
-    <a class="slot g2" href="fotos/banheiro-social-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-social-ipanema.jpg" alt="Banheiro social com box e revestimento amadeirado" loading="lazy"></a>
-    <a class="slot g3" href="fotos/adega-bar-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/adega-bar-ipanema.jpg" alt="Adega e bar com obra de arte e clima praiano" loading="lazy"></a>
-    <a class="slot g3" href="fotos/banheiro-suite-vista-quarto-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-suite-vista-quarto-ipanema.jpg" alt="Banheiro da suíte com bancada dupla e vista para o quarto" loading="lazy"></a>
+    <a class="slot g4 tall" href="fotos/sala-estar-ipanema-vista-mar.jpg" target="_blank" rel="noopener"><img src="fotos/sala-estar-ipanema-vista-mar.jpg" alt="Sala de estar integrada com vista para o mar em apartamento de Ipanema" loading="lazy" decoding="async"></a>
+    <a class="slot g2 tall" href="fotos/suite-master-ipanema-closet.jpg" target="_blank" rel="noopener"><img src="fotos/suite-master-ipanema-closet.jpg" alt="Suíte master com grande closet planejado em Ipanema" loading="lazy" decoding="async"></a>
+    <a class="slot g3" href="fotos/cozinha-gourmet-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/cozinha-gourmet-ipanema.jpg" alt="Cozinha gourmet com ilha e sala de jantar integrada" loading="lazy" decoding="async"></a>
+    <a class="slot g3" href="fotos/living-integrado-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/living-integrado-ipanema.jpg" alt="Living integrado com poltronas e paisagismo" loading="lazy" decoding="async"></a>
+    <a class="slot g2" href="fotos/cozinha-planejada-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/cozinha-planejada-ipanema.jpg" alt="Cozinha planejada com bancada e marcenaria sob medida" loading="lazy" decoding="async"></a>
+    <a class="slot g2" href="fotos/banheiro-suite-master-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-suite-master-ipanema.jpg" alt="Banheiro da suíte master com duas cubas e mármore" loading="lazy" decoding="async"></a>
+    <a class="slot g2" href="fotos/lavabo-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/lavabo-ipanema.jpg" alt="Lavabo com marcenaria ripada e espelho iluminado" loading="lazy" decoding="async"></a>
+    <a class="slot g3 tall" href="fotos/suite-master-ipanema-quarto.jpg" target="_blank" rel="noopener"><img src="fotos/suite-master-ipanema-quarto.jpg" alt="Quarto da suíte master com painel e acesso ao closet" loading="lazy" decoding="async"></a>
+    <a class="slot g3" href="fotos/escritorio-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/escritorio-ipanema.jpg" alt="Escritório com bancada planejada" loading="lazy" decoding="async"></a>
+    <a class="slot g2" href="fotos/quarto-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/quarto-ipanema.jpg" alt="Quarto com armário planejado" loading="lazy" decoding="async"></a>
+    <a class="slot g2 tall" href="fotos/area-servico-dependencia-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/area-servico-dependencia-ipanema.jpg" alt="Área de serviço ampla com dependência completa" loading="lazy" decoding="async"></a>
+    <a class="slot g2" href="fotos/banheiro-social-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-social-ipanema.jpg" alt="Banheiro social com box e revestimento amadeirado" loading="lazy" decoding="async"></a>
+    <a class="slot g3" href="fotos/adega-bar-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/adega-bar-ipanema.jpg" alt="Adega e bar com obra de arte e clima praiano" loading="lazy" decoding="async"></a>
+    <a class="slot g3" href="fotos/banheiro-suite-vista-quarto-ipanema.jpg" target="_blank" rel="noopener"><img src="fotos/banheiro-suite-vista-quarto-ipanema.jpg" alt="Banheiro da suíte com bancada dupla e vista para o quarto" loading="lazy" decoding="async"></a>
   </div>
 </section>
 <section id="detalhes" class="block wrap">
@@ -338,10 +341,6 @@ if(GA_ID){
   window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID);
 }
 function trackLead(){ if(window.fbq)fbq('track','Lead'); if(window.gtag)gtag('event','generate_lead',{value:6900000,currency:'BRL'}); }
-/* Foto do hero */
-const HERO_IMG="fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg";
-const b=document.getElementById("herobg");
-if(HERO_IMG){b.style.backgroundImage="url('"+HERO_IMG+"')";b.style.backgroundSize="cover";b.style.backgroundPosition="center";}else{b.classList.add("placeholder");}
 const baseMsg="Olá! Tenho interesse no apartamento de 300 m² em Ipanema (R$ 6.900.000, venda direta). Gostaria de mais informações.";
 function waLink(t){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t||baseMsg);}
 document.querySelectorAll("[data-whatsapp]").forEach(a=>{a.href=waLink();a.target="_blank";a.rel="noopener";a.addEventListener("click",trackLead);});
