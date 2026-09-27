@@ -1,0 +1,39 @@
+{
+  "identifier": "urn:air:moraremipanema.com:resource:ipanema-guides",
+  "displayName": "Guias e páginas de localização em Ipanema",
+  "type": "application/resource+json",
+  "description": "Coleção estruturada de conteúdos editoriais sobre Ipanema, suas ruas e critérios de compra de imóveis.",
+  "url": "https://moraremipanema.com/guia-ipanema.html",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://moraremipanema.com/guia-ipanema.html"
+    },
+    {
+      "rel": "collection",
+      "href": "https://moraremipanema.com/sitemap.xml"
+    },
+    {
+      "rel": "related",
+      "href": "https://moraremipanema.com/morar-em-ipanema.html"
+    },
+    {
+      "rel": "related",
+      "href": "https://moraremipanema.com/mercado-imobiliario-ipanema.html"
+    }
+  ],
+  "data": {
+    "sections": [
+      "guia do bairro",
+      "mercado imobiliário",
+      "ruas de Ipanema",
+      "tipos de imóvel"
+    ],
+    "samplePages": [
+      "https://moraremipanema.com/guia-ipanema.html",
+      "https://moraremipanema.com/morar-em-ipanema.html",
+      "https://moraremipanema.com/avenida-vieira-souto.html",
+      "https://moraremipanema.com/rua-teixeira-de-melo-ipanema.html"
+    ]
+  }
+}

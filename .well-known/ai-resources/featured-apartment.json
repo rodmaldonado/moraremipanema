@@ -1,0 +1,32 @@
+{
+  "identifier": "urn:air:moraremipanema.com:resource:featured-apartment",
+  "displayName": "Apartamento de 300 m² em Ipanema",
+  "type": "application/resource+json",
+  "description": "Resumo estruturado do imóvel principal anunciado no site.",
+  "url": "https://moraremipanema.com/",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://moraremipanema.com/"
+    },
+    {
+      "rel": "image",
+      "href": "https://moraremipanema.com/fotos/og-capa.png"
+    },
+    {
+      "rel": "related",
+      "href": "https://moraremipanema.com/comprar-apartamento-em-ipanema.html"
+    }
+  ],
+  "data": {
+    "category": "Apartamento de alto padrão à venda",
+    "location": "Ipanema, Rio de Janeiro",
+    "highlights": [
+      "300 m²",
+      "andar inteiro",
+      "4 quartos",
+      "vista lateral para o mar",
+      "venda direta com o proprietário"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Morar em Ipanema",
+    "identifier": "moraremipanema.com",
+    "documentationUrl": "https://moraremipanema.com/",
+    "logoUrl": "https://moraremipanema.com/fotos/og-capa.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:moraremipanema.com:resource:featured-apartment",
+      "displayName": "Apartamento de 300 m² em Ipanema",
+      "type": "application/resource+json",
+      "url": "https://moraremipanema.com/.well-known/ai-resources/featured-apartment.json",
+      "description": "Recurso estruturado com a oferta principal do apartamento anunciado no site.",
+      "links": [
+        {
+          "rel": "alternate",
+          "href": "https://moraremipanema.com/"
+        },
+        {
+          "rel": "sitemap",
+          "href": "https://moraremipanema.com/sitemap.xml"
+        }
+      ]
+    },
+    {
+      "identifier": "urn:air:moraremipanema.com:resource:ipanema-guides",
+      "displayName": "Guias e páginas de localização em Ipanema",
+      "type": "application/resource+json",
+      "url": "https://moraremipanema.com/.well-known/ai-resources/ipanema-guides.json",
+      "description": "Recurso estruturado com guias do bairro, páginas de ruas e conteúdos editoriais do site.",
+      "links": [
+        {
+          "rel": "alternate",
+          "href": "https://moraremipanema.com/guia-ipanema.html"
+        },
+        {
+          "rel": "collection",
+          "href": "https://moraremipanema.com/sitemap.xml"
+        }
+      ]
+    }
+  ]
+}
