@@ -87,11 +87,11 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
-:root{--paper:#FBFAF7;--ink:#1C1B19;--muted:#9B958A;--line:#E9E4DA;--tan:#C0925A;--dark:#201F1D;--card:#F4F1EA;--nav-h:66px}
+:root{--paper:#FBFAF7;--ink:#1C1B19;--muted:#6B645C;--line:#E9E4DA;--tan:#8B5E2B;--dark:#201F1D;--card:#F4F1EA;--nav-h:66px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:var(--nav-h)}
@@ -138,9 +138,9 @@ section{scroll-margin-top:20px}
 .keylist b{min-width:92px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tan)}
 .faq{border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line);padding:22px 0}
-.faq summary{cursor:pointer;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;line-height:1.2;list-style:none}
+.faq summary{cursor:pointer;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;line-height:1.2;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";float:right;font-family:"Inter",system-ui,sans-serif;color:var(--tan);font-size:1.1rem;margin-left:18px}
+.faq summary::after{content:"+";font-family:"Inter",system-ui,sans-serif;color:var(--tan);font-size:1.1rem;flex:0 0 auto}
 .faq details[open] summary::after{content:"-"}
 .faq p{max-width:68ch;margin:.8em 0 0}
 .spec .row{display:flex;justify-content:space-between;gap:24px;padding:18px 2px;border-bottom:1px solid var(--line)}
@@ -172,8 +172,9 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
   .g2,.g3,.g4{grid-column:span 2}.tall{grid-row:span 1}.g4.tall{grid-row:span 2}
 }
 </style>
-<!-- mi:css --><style>.mi-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 40px;margin-top:28px}.mi-hub h3{font-family:"Inter",system-ui,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--tan);margin:14px 0 8px}.mi-list{list-style:none;margin:0;padding:0}.mi-list li{padding:6px 0;border-bottom:1px solid var(--line)}.mi-list a{color:#4a463f;text-decoration:none}.mi-list a:hover{color:var(--tan)}@media (max-width:760px){.mi-hub{grid-template-columns:1fr}}</style><!-- /mi:css --></head>
+<!-- mi:css --><style>.mi-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 40px;margin-top:28px}.mi-hub h3{font-family:"Inter",system-ui,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--tan);margin:14px 0 8px}.mi-list{list-style:none;margin:0;padding:0}.mi-list li{border-bottom:1px solid var(--line)}.mi-list a{color:#4a463f;text-decoration:none;display:flex;align-items:center;min-height:44px;padding:8px 0}.mi-list a:hover{color:var(--tan)}@media (max-width:760px){.mi-hub{grid-template-columns:1fr}}</style><!-- /mi:css --></head>
 <body>
+<main id="conteudo-principal">
 <section id="inicio">
   <header class="hero">
     <div class="bg"><img src="fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg" alt="Sala e varanda com vista lateral para o mar em apartamento de alto padrão em Ipanema" fetchpriority="high" decoding="async"></div>
@@ -316,6 +317,7 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
     </form>
   </div>
 </section>
+ </main>
 <footer>Ipanema · Zona Sul · 300 m² · Venda direta com o proprietário — Rio de Janeiro / RJ</footer>
 <nav class="tabbar">
   <a href="#inicio" data-nav="inicio" class="active"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Início</a>
