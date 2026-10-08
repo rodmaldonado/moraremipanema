@@ -12,15 +12,11 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Morar Ipanema">
 <meta property="og:title" content="Apartamento em Ipanema · 300 m² · Um andar inteiro">
-<meta property="og:description" content="Alto padrão em Ipanema: 300 m², 4 quartos, suíte master e vista para o mar. Pronto para morar. R$ 6.900.000.">
+<meta property="og:description" content="Alto padrão em Ipanema: 300 m², 4 quartos, suíte master e vista para o mar. Pronto para morar. R$ 6.500.000.">
 <meta property="og:url" content="https://www.moraremipanema.com/">
-<meta property="og:image" content="https://www.moraremipanema.com/fotos/og-capa.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Apartamento em Ipanema · 300 m²">
-<meta name="twitter:description" content="Alto padrão em Ipanema, um andar inteiro, vista para o mar. R$ 6.900.000.">
-<meta name="twitter:image" content="https://www.moraremipanema.com/fotos/og-capa.jpg">
+<meta name="twitter:description" content="Alto padrão em Ipanema, um andar inteiro, vista para o mar. R$ 6.500.000.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,17 +25,11 @@
       "@type": "Product",
       "name": "Apartamento de alto padrão em Ipanema — 300 m²",
       "description": "Apartamento de 300 m² em Ipanema, ocupando um andar inteiro. Planta circular, 4 quartos com suíte master, vista lateral para o mar, 2 vagas, porteira fechada.",
-      "image": [
-        "https://www.moraremipanema.com/fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg",
-        "https://www.moraremipanema.com/fotos/sala-estar-ipanema-vista-mar.jpg",
-        "https://www.moraremipanema.com/fotos/suite-master-ipanema-closet.jpg",
-        "https://www.moraremipanema.com/fotos/cozinha-gourmet-ipanema.jpg"
-      ],
       "brand": { "@type": "Brand", "name": "Morar Ipanema" },
       "category": "Imóvel residencial de alto padrão",
       "offers": {
         "@type": "Offer",
-        "price": "6900000",
+        "price": "6500000",
         "priceCurrency": "BRL",
         "availability": "https://schema.org/InStock",
         "url": "https://www.moraremipanema.com/",
@@ -130,6 +120,7 @@ section{scroll-margin-top:20px}
 .mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:132px;gap:12px;grid-auto-flow:dense;margin-top:8px}
 .slot{position:relative;border-radius:3px;overflow:hidden;background:var(--card);display:block}
 .slot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.slot.unavailable::after{content:"Imagem não disponível";position:absolute;inset:0;display:grid;place-items:center;padding:1em;color:var(--muted);font-size:.8rem;text-align:center}
 .slot:hover img{transform:scale(1.04)}
 .g2{grid-column:span 2}.g3{grid-column:span 3}.g4{grid-column:span 4}.tall{grid-row:span 2}
 .location{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -192,7 +183,7 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
     </a>
   </div>
 
-  <div class="pricebar"><b>R$ 6.900.000</b><span>Venda direta</span></div>
+  <div class="pricebar"><b>R$ 6.500.000</b><span>Venda direta</span></div>
   <div class="stats">
     <div class="stat"><div class="v">300 m²</div><div class="k">Área</div></div>
     <div class="stat"><div class="v">4</div><div class="k">Quartos</div></div>
@@ -269,7 +260,7 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
   </div>
   <div class="spec">
     <div class="row"><span class="k">Situação</span><span class="v">Pronto para morar · porteira fechada · legalizado</span></div>
-    <div class="row"><span class="k">Valor</span><span class="v">R$ 6.900.000</span></div>
+    <div class="row"><span class="k">Valor</span><span class="v">R$ 6.500.000</span></div>
   </div>
 </section>
 <section class="block wrap">
@@ -340,12 +331,26 @@ if(GA_ID){
   var g=document.createElement('script');g.async=1;g.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(g);
   window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID);
 }
-function trackLead(){ if(window.fbq)fbq('track','Lead'); if(window.gtag)gtag('event','generate_lead',{value:6900000,currency:'BRL'}); }
+function trackLead(){ if(window.fbq)fbq('track','Lead'); if(window.gtag)gtag('event','generate_lead',{value:6500000,currency:'BRL'}); }
 /* Foto do hero */
 const HERO_IMG="fotos/apartamento-ipanema-sala-varanda-vista-mar.jpg";
 const b=document.getElementById("herobg");
-if(HERO_IMG){b.style.backgroundImage="url('"+HERO_IMG+"')";b.style.backgroundSize="cover";b.style.backgroundPosition="center";}else{b.classList.add("placeholder");}
-const baseMsg="Olá! Tenho interesse no apartamento de 300 m² em Ipanema (R$ 6.900.000, venda direta). Gostaria de mais informações.";
+b.classList.add("placeholder");
+if(HERO_IMG){
+  const heroImage=new Image();
+  heroImage.onload=()=>{b.classList.remove("placeholder");b.style.backgroundImage="url('"+HERO_IMG+"')";};
+  heroImage.src=HERO_IMG;
+}
+document.querySelectorAll(".slot img").forEach(img=>img.addEventListener("error",()=>{
+  const link=img.closest(".slot");
+  if(link){
+    link.classList.add("unavailable");
+    link.removeAttribute("href");link.removeAttribute("target");link.removeAttribute("rel");
+    link.setAttribute("aria-disabled","true");link.setAttribute("aria-label",img.alt);
+  }
+  img.remove();
+}));
+const baseMsg="Olá! Tenho interesse no apartamento de 300 m² em Ipanema (R$ 6.500.000, venda direta). Gostaria de mais informações.";
 function waLink(t){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t||baseMsg);}
 document.querySelectorAll("[data-whatsapp]").forEach(a=>{a.href=waLink();a.target="_blank";a.rel="noopener";a.addEventListener("click",trackLead);});
 document.getElementById("contact-form").addEventListener("submit",event=>{
