@@ -164,7 +164,19 @@ footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
   .g2,.g3,.g4{grid-column:span 2}.tall{grid-row:span 1}.g4.tall{grid-row:span 2}
 }
 </style>
-<!-- mi:css --><style>.mi-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 40px;margin-top:28px}.mi-hub h3{font-family:"Inter",system-ui,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--tan);margin:14px 0 8px}.mi-list{list-style:none;margin:0;padding:0}.mi-list li{padding:6px 0;border-bottom:1px solid var(--line)}.mi-list a{color:#4a463f;text-decoration:none}.mi-list a:hover{color:var(--tan)}@media (max-width:760px){.mi-hub{grid-template-columns:1fr}}</style><!-- /mi:css --></head>
+<!-- mi:css --><style>.mi-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 40px;margin-top:28px}.mi-hub h3{font-family:"Inter",system-ui,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--tan);margin:14px 0 8px}.mi-list{list-style:none;margin:0;padding:0}.mi-list li{padding:6px 0;border-bottom:1px solid var(--line)}.mi-list a{color:#4a463f;text-decoration:none}.mi-list a:hover{color:var(--tan)}@media (max-width:760px){.mi-hub{grid-template-columns:1fr}}</style><!-- /mi:css -->
+<script>
+document.addEventListener("error",event=>{
+  const img=event.target;
+  if(!(img instanceof HTMLImageElement))return;
+  const link=img.closest(".slot");
+  if(!link)return;
+  link.classList.add("unavailable");
+  link.removeAttribute("href");link.removeAttribute("target");link.removeAttribute("rel");
+  link.setAttribute("aria-disabled","true");link.setAttribute("aria-label",img.alt);
+  img.remove();
+},true);
+</script></head>
 <body>
 <section id="inicio">
   <header class="hero">
@@ -341,15 +353,6 @@ if(HERO_IMG){
   heroImage.onload=()=>{b.classList.remove("placeholder");b.style.backgroundImage="url('"+HERO_IMG+"')";};
   heroImage.src=HERO_IMG;
 }
-document.querySelectorAll(".slot img").forEach(img=>img.addEventListener("error",()=>{
-  const link=img.closest(".slot");
-  if(link){
-    link.classList.add("unavailable");
-    link.removeAttribute("href");link.removeAttribute("target");link.removeAttribute("rel");
-    link.setAttribute("aria-disabled","true");link.setAttribute("aria-label",img.alt);
-  }
-  img.remove();
-}));
 const baseMsg="Olá! Tenho interesse no apartamento de 300 m² em Ipanema (R$ 6.500.000, venda direta). Gostaria de mais informações.";
 function waLink(t){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t||baseMsg);}
 document.querySelectorAll("[data-whatsapp]").forEach(a=>{a.href=waLink();a.target="_blank";a.rel="noopener";a.addEventListener("click",trackLead);});
